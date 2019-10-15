@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>muyie-ddd-parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>MuYie DDD Parent</name>
+	<description>MuYie Domain-Driven Design(DDD) Project</description>
+	<url>https://github.com/zhycn/muyie-ddd/</url>
+
+	<parent>
+		<groupId>com.github.zhycn</groupId>
+		<artifactId>muyie-dependencies</artifactId>
+		<version>1.0.0</version>
+		<relativePath />
+	</parent>
+
+	<licenses>
+		<license>
+			<name>Apache License, version 2.0</name>
+			<url>https://github.com/zhycn/muyie-ddd/blob/master/LICENSE.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>MuYie</name>
+		<url>https://github.com/zhycn/muyie-ddd/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>zhycn</id>
+			<name>Qi Zhaohong</name>
+			<url>https://github.com/zhycn</url>
+			<organization>MuYie</organization>
+			<organizationUrl>https://github.com/zhycn/muyie-ddd/</organizationUrl>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>muyie-ddd-client</module>
+		<module>muyie-ddd-domain</module>
+		<module>muyie-ddd-infrastructure</module>
+		<module>muyie-ddd-app</module>
+	</modules>
+
+	<scm>
+		<connection>scm:git:https://github.com/zhycn/muyie-ddd/</connection>
+		<url>https://github.com/zhycn/muyie-ddd/</url>
+	</scm>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.github.zhycn</groupId>
+				<artifactId>muyie-ddd-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.zhycn</groupId>
+				<artifactId>muyie-ddd-domain</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.zhycn</groupId>
+				<artifactId>muyie-ddd-infrastructure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>
