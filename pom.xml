@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>muyie-ddd-parent</artifactId>
+    <artifactId>muyie-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>MuYie DDD Parent</name>
@@ -13,7 +13,7 @@
     <parent>
         <groupId>com.github.zhycn</groupId>
         <artifactId>muyie-dependencies</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.7</version>
         <relativePath />
     </parent>
 
@@ -41,10 +41,11 @@
     </developers>
 
     <modules>
-        <module>muyie-ddd-client</module>
-        <module>muyie-ddd-domain</module>
-        <module>muyie-ddd-infrastructure</module>
-        <module>muyie-ddd-app</module>
+        <module>muyie-api</module>
+		<module>muyie-application</module>
+        <module>muyie-domain</module>
+        <module>muyie-infrastructure</module>
+        <module>muyie-scheduler</module>
     </modules>
 
     <scm>
@@ -56,17 +57,27 @@
         <dependencies>
             <dependency>
                 <groupId>com.github.zhycn</groupId>
-                <artifactId>muyie-ddd-client</artifactId>
+                <artifactId>muyie-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+			<dependency>
+                <groupId>com.github.zhycn</groupId>
+                <artifactId>muyie-application</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.zhycn</groupId>
-                <artifactId>muyie-ddd-domain</artifactId>
+                <artifactId>muyie-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.zhycn</groupId>
-                <artifactId>muyie-ddd-infrastructure</artifactId>
+                <artifactId>muyie-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+			<dependency>
+                <groupId>com.github.zhycn</groupId>
+                <artifactId>muyie-scheduler</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
