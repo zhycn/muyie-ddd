@@ -41,10 +41,10 @@
     </developers>
 
     <modules>
-        <module>muyie-api</module>
 		<module>muyie-application</module>
         <module>muyie-domain</module>
         <module>muyie-infrastructure</module>
+		<module>muyie-interfaces</module>
         <module>muyie-scheduler</module>
     </modules>
 
@@ -55,11 +55,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>com.github.zhycn</groupId>
-                <artifactId>muyie-api</artifactId>
-                <version>${project.version}</version>
-            </dependency>
 			<dependency>
                 <groupId>com.github.zhycn</groupId>
                 <artifactId>muyie-application</artifactId>
@@ -73,6 +68,11 @@
             <dependency>
                 <groupId>com.github.zhycn</groupId>
                 <artifactId>muyie-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+			<dependency>
+                <groupId>com.github.zhycn</groupId>
+                <artifactId>muyie-interfaces</artifactId>
                 <version>${project.version}</version>
             </dependency>
 			<dependency>
