@@ -14,6 +14,10 @@
     </parent>
 
     <dependencies>
+    	<dependency>
+            <groupId>com.github.zhycn</groupId>
+            <artifactId>muyie-api</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.github.zhycn</groupId>
             <artifactId>muyie-application</artifactId>
