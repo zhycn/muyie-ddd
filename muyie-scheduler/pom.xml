@@ -16,7 +16,7 @@
     <dependencies>
         <dependency>
             <groupId>com.github.zhycn</groupId>
-            <artifactId>muyie-domain</artifactId>
+            <artifactId>muyie-application</artifactId>
         </dependency>
 
         <dependency>

@@ -5,10 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class SchedulerApp {
 
   public static void main(String[] args) throws Exception {
-    SpringApplication application = new SpringApplication(Application.class);
+    SpringApplication application = new SpringApplication(SchedulerApp.class);
     DefaultProfileUtil.addDefaultProfile(application);
     application.run(args);
   }
